@@ -12,9 +12,11 @@
   padding: 2.4rem 0;
   visibility: hidden;
   &__nav {
+    z-index:0;
     @extend %padding-home;
     margin-bottom: 6.4rem;
-    z-index:100;
+    
+    cursor: pointer;
     margin:10px 20px 40px 20px;
     display: flex;
     justify-content: space-between;
@@ -102,12 +104,13 @@
   }
 
   &__hero {
-    z-index:50;
+    z-index:-10;
     margin-bottom: 9.6rem;
     @extend %padding-home;
 
     .hero {
       &__title {
+        
         line-height: 0.9;
         color: $col-boulder;
 
