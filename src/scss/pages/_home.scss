@@ -14,6 +14,8 @@
   &__nav {
     @extend %padding-home;
     margin-bottom: 6.4rem;
+    z-index:100;
+    margin:10px 20px 40px 20px;
     display: flex;
     justify-content: space-between;
     @extend %description-12;
@@ -77,6 +79,7 @@
       &__folio,
       &__availability {
         color: $col-boulder;
+        
 
         @include media("<=phone") {
           margin-bottom: 2.5rem;
@@ -86,10 +89,20 @@
           }
         }
       }
+      &__name{
+        font-size: 2.5rem;
+        color:rgb(115, 115, 115);
+        text-transform: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        
+      
+      }
     }
   }
 
   &__hero {
+    z-index:50;
     margin-bottom: 9.6rem;
     @extend %padding-home;
 
@@ -114,6 +127,7 @@
             }
           }
         }
+        
 
         .hero__hover {
           transition: color 0.2s;
@@ -748,7 +762,8 @@
         @extend %description-32;
         background: transparent;
         border: 0;
-        font-weight: 500;
+        font-size:2.5rem;
+        font-weight: 400;
         cursor: pointer;
         color: $col-gray;
         padding: 0;
