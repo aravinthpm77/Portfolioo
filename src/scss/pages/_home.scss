@@ -810,7 +810,10 @@
     }
 
     @include media("<=phone") {
-      max-width: 255px;
+      
+      max-width: 320px;
+      
+      flex-direction:row;
       width: 100%;
     }
 
@@ -821,6 +824,7 @@
         left: 2.4rem;
         position: absolute;
         right: 0;
+        
         top: 1rem;
       }
 
@@ -848,10 +852,12 @@
     }
 
     &__right {
+      margin-left: 50px;
       @extend %links;
 
       @include media(">tablet") {
-        right: 2.4rem;
+        
+        right: 2rem;
         position: absolute;
         top: 1rem;
       }
@@ -861,12 +867,15 @@
       .footer__links {
         @include media(">tablet") {
           display: flex;
+          
         }
 
         align-items: center;
 
         @include media("<=tablet") {
           margin-bottom: 4.8rem;
+          display: flex;
+          
         }
         .link__flex {
           display: flex;
@@ -878,7 +887,8 @@
           }
 
           @include media("<=phone") {
-            max-width: 255px;
+            margin-left: -60px;
+            max-width: 320px;
             width: 100%;
           }
 
