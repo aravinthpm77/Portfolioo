@@ -730,10 +730,13 @@
     }
 
     &__email {
-      padding-top: 4.8rem;
-      padding-bottom: 7.2rem;
+      
+      padding-top: 2.8rem;
+      padding-bottom: 3.2rem;
       text-align: center;
-
+      display: grid;
+      align-items: center;
+      
       @include media("<=phone") {
         max-width: 255px;
         width: 100%;
@@ -765,12 +768,13 @@
         @extend %description-32;
         background: transparent;
         border: 0;
+        
         font-size:2.5rem;
         font-weight: 400;
         cursor: pointer;
         color: $col-gray;
         padding: 0;
-        margin-bottom: 1.6rem;
+        
 
         @include media("<=tablet") {
           text-align: left;
@@ -788,6 +792,20 @@
             opacity: 1;
           }
         }
+      }
+      .resume {
+        @extend %description-32;
+        background: transparent;
+        border: 0;
+        
+        font-size:2.5rem;
+        margin-top: 1rem;
+        
+        letter-spacing: .7rem;
+        font-weight: 400;
+        cursor: pointer;
+        color: $col-gray;
+        padding: 0;
       }
     }
   }
@@ -818,11 +836,12 @@
     }
 
     &__left {
-      margin-left: -50px;
+      margin-left: 10px;
       display: flex;
+      font-size: 2rem;
       font-family: $font-sauce;
       @include media(">tablet") {
-        left: 2.4rem;
+        left: 2.2rem;
         position: absolute;
         right: 0;
         
@@ -879,22 +898,24 @@
           
         }
         .link__flex {
-          display: flex;
+          display: grid;
           margin-left: auto;
-
+          
           @include media("<=tablet") {
             max-width: 40rem;
             width: 100%;
           }
 
           @include media("<=phone") {
-            margin-left: -60px;
-            max-width: 320px;
+            margin-left:20px;
+            
+            max-width:220px;
             width: 100%;
           }
 
           &__inner {
             display: flex;
+            
             .c-button {
               @include media("<=tablet") {
                 &:first-of-type {
@@ -925,7 +946,7 @@
           @include media("<=tablet") {
             &__inner {
               &.second {
-                margin-top: 1.6rem;
+                margin-top: 1rem;
                 flex-direction: row-reverse;
               }
             }
