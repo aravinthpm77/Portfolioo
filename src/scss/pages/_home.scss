@@ -811,13 +811,14 @@
 
     @include media("<=phone") {
       
-      max-width: 320px;
+      max-width: 400px;
       
       flex-direction:row;
       width: 100%;
     }
 
     &__left {
+      margin-left: -50px;
       display: flex;
       font-family: $font-sauce;
       @include media(">tablet") {
